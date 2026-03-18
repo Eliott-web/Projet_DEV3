@@ -20,3 +20,4 @@ PROJET_DEV3/
 │   ├── dist/         # Fichiers compilés (.js)
 │   └── package.json  # Configuration et scripts
 └── .gitignore        # Fichiers exclus de Git
+└── README.md
