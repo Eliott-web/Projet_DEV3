@@ -1,5 +1,5 @@
-# 🚀 PROJET_DEV3 - Backend TP1
-> Système de gestion pour projets d'électronique (Node.js + TypeScript)
+# 🚀 PROJET_DEV3
+> Système de gestion pour projets d'électronique
 
 ## 📌 Présentation
 Ce projet est le backend d'une application de gestion de composants et de schémas électroniques. Il est structuré pour être robuste, typé et facile à maintenir.
