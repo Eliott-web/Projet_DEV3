@@ -7,7 +7,8 @@ Ce projet est le backend d'une application de gestion de composants et de schém
 ## 🛠️ Technologies utilisées
 * **Runtime :** [Node.js](https://nodejs.org/) (v20+)
 * **Langage :** [TypeScript](https://www.typescriptlang.org/)
-* **Outils :** * `nodemon` (Auto-reload)
+* **Outils :**
+    *  `nodemon` (Auto-reload)
     * `ts-node` (Exécution directe TS)
     * `PowerShell` (Environnement de commande)
 
