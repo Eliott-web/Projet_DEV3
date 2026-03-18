@@ -20,5 +20,5 @@ PROJET_DEV3/
 │   ├── src/          # Fichiers sources (.ts)
 │   ├── dist/         # Fichiers compilés (.js)
 │   └── package.json  # Configuration et scripts
-└── .gitignore        # Fichiers exclus de Git
+├── .gitignore        # Fichiers exclus de Git
 └── README.md
