@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    /* Cœur de TypeScript & Node.js */
+    "target": "esnext",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "lib": ["esnext"],
+
+    /* Options pour ta bannière (Import du package.json) */
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    /* Organisation des dossiers */
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* Options de Sécurité Strictes (Tes préférées) */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    /* Aide au Développement */
+    "sourceMap": true,
+    "declaration": true,
+    "isolatedModules": true,
+    "moduleDetection": "force"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

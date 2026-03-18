@@ -1,0 +1,15 @@
+{
+  "name": "dev3-backend-tp1",
+  "version": "1.0.0",
+  "description": "Système de gestion de projets électronique",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
+  }
+}
