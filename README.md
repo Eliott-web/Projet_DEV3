@@ -4,13 +4,17 @@
 ## 📌 Présentation
 Ce projet est le backend d'une application de gestion de composants et de schémas électroniques. Il est structuré pour être robuste, typé et facile à maintenir.
 
-## 🛠️ Technologies utilisées
-* **Runtime :** [Node.js](https://nodejs.org/) (v20+)
-* **Langage :** [TypeScript](https://www.typescriptlang.org/)
-* **Outils :**
-    *  `nodemon` (Auto-reload)
-    * `ts-node` (Exécution directe TS)
-    * `PowerShell` (Environnement de commande)
+## 🛠️ Stack Technique
+
+### 🖥️ Frontend (Dossier /client)
+* **HTML5** : Structure des pages de l'interface.
+* **CSS3** : Mise en forme et design responsive.
+* **JavaScript (Vanilla)** : Interactions dynamiques côté client.
+
+### ⚙️ Backend (Dossier /server)
+* **Runtime** : Node.js (v20+)
+* **Langage** : TypeScript (Typage fort pour la sécurité).
+* **Outils** : `nodemon`, `ts-node`.
 
 ## 📂 Structure du Projet
 ```text
