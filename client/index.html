@@ -4,23 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <title>Document</title>
+    <title>ProjetHub</title>
 </head>
 <body>
     <header>
+        <div class="logo-container">
+            <img src="img/Logo_electronique_dynamique_avec_ampoule.png" alt="Logo ProjetHub">
+            <h3>ProjetHub</h3>
+        </div>
 
-    <div class="logo-container">
-        <img src="img/Logo_electronique_dynamique_avec_ampoule.png" alt="Logo ProjetHub">
-        <h3>ProjetHub</h3>
-    </div>
+        <div class="header-buttons">
+            <a href="connextion.html"><button>Connexion</button></a>
+            <a href="inscription.html"><button>Inscription</button></a>
+        </div>
+    </header>
+    <main>
+        <div class="div-gauche" id="box">
+            <h3>Projets :</h3>
+            <div class="nav-projet">
+                <h4>Nouveau projet :</h4>
+                <a href="#">• Projet ADs Block</a><br>
+                <a href="#">• Manette</a><br>
+                <a href="#">• Station météo</a>
+            </div>
+        </div>
 
-    <div class="header-buttons">
-        <a href="connextion-inscription.html"><button>Connexion</button></a>
-        <a href="connextion-inscription.html"><button>Inscription</button></a>
-    </div>
+        <div class="div-droite" id="box">
+            <h3>Composants :</h3>
+            <div class="nav-composant">
+                <a href="composant.html">Voir les composants</a>
+                <br>
+                <a href="ajouter-composant.html">Ajoutés des composants</a>
+                <br><br>
+            </div>
+        </div>
 
-</header>
+        <div class="div-center">
+            <div class="nav-bar">
+                <span class="search-icon">🔍</span>
+                <input type="text" placeholder="Rechercher un projet...">
+            </div>
 
+            <h3 class="titre-propose">Projet proposé :</h3>
 
+            <a href="projet-detail.html" class="projet-link">
+                <div class="box-projet">
+                    <div class="img">
+                        <span>Image</span>
+                    </div>
+
+                    <div class="description">
+                        <h4>Titre du Projet</h4>
+                        <p>Description courte du projet électronique...</p>
+                        
+                        <div class="infos-sup">
+                            <p>Difficulté : Intermédiaire</p>
+                            <p>Temps : 4 heures</p>
+                        </div>
+                        
+                        <span class="date-createur">Créateur - 26/03/2026</span>
+                    </div>
+
+                    <div class="categories">
+                        <div class="tag categ1">Catégorie 1</div>
+                        <div class="tag categ2">Catégorie 2</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
 </body>
 </html>
