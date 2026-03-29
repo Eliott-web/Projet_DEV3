@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Profil - ProjetHub</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/profil.css">
 </head>
 <body class="bg-light">
 
@@ -14,7 +14,7 @@
         <h2>ProjetHub</h2>
     </div>
     <div class="header-buttons">
-        <a href="home.html" class="btn-home">🏠 Accueil</a>
+        <a href="home.html" class="btn-home">Accueil</a>
     </div>
 </header>
 
@@ -23,8 +23,7 @@
         <div class="profile-header">
             <div class="avatar-large">
                 <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Eliott" alt="Avatar" id="display-avatar">
-                <label for="upload-photo" class="edit-avatar">📷</label>
-                <input type="file" id="upload-photo" hidden>
+                <div class="edit-avatar" onclick="openAvatarModal()">📷</div>
             </div>
             <h2 id="display-username">Eliott</h2>
             <p class="user-role">Inventeur Passionné</p>
@@ -103,6 +102,39 @@
         <div class="modal-buttons">
             <button id="save-btn" onclick="saveProfile()" class="btn-full">Enregistrer</button>
             <button onclick="closeSettings()" class="secondary">Annuler</button>
+        </div>
+    </div>
+</div>
+
+<div id="avatar-modal" class="modal">
+    <div class="modal-content auth-card avatar-selector-card">
+        <h3>Choisir un avatar</h3>
+        <div class="avatar-grid">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" class="pre-avatar" onclick="selectPredefined(this.src)" alt="Avatar Felix">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Aneka" class="pre-avatar" onclick="selectPredefined(this.src)" alt="Avatar Aneka">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Max" class="pre-avatar" onclick="selectPredefined(this.src)" alt="Avatar Max">
+            
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Jack" class="pre-avatar" onclick="selectPredefined(this.src)" alt="Avatar Jack">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Luna" class="pre-avatar" onclick="selectPredefined(this.src)" alt="Avatar Luna">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Zoe" class="pre-avatar" onclick="selectPredefined(this.src)" alt="Avatar Zoe">
+            
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Oliver" class="pre-avatar" onclick="selectPredefined(this.src)" alt="Avatar Oliver">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Maya" class="pre-avatar" onclick="selectPredefined(this.src)" alt="Avatar Maya">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Milo" class="pre-avatar" onclick="selectPredefined(this.src)" alt="Avatar Milo">
+            
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sasha" class="pre-avatar" onclick="selectPredefined(this.src)" alt="Avatar Sasha">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Leo" class="pre-avatar" onclick="selectPredefined(this.src)" alt="Avatar Leo">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Aria" class="pre-avatar" onclick="selectPredefined(this.src)" alt="Avatar Aria">
+        </div>
+        <div class="divider"><span>OU</span></div>
+        <div class="upload-zone">
+            <label for="upload-photo" class="upload-btn">
+                <span>📁</span> Télécharger ma photo
+            </label>
+            <input type="file" id="upload-photo" hidden>
+        </div>
+        <div class="modal-buttons">
+            <button onclick="closeAvatarModal()" class="btn-full">Fermer</button>
         </div>
     </div>
 </div>
