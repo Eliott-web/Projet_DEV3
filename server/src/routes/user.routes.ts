@@ -1,6 +1,7 @@
 // server/src/routes/user.routes.ts
 import { Router } from 'express';
 import User from '../models/project.user';
+import { loginUser, registerUser } from '../controllers/projects.controller';
 
 const router = Router();
 
@@ -14,4 +15,8 @@ router.get('/', async (req, res) => {
     }
 });
 
+router.post('/register', registerUser);
+
+
+router.post('/login', loginUser);
 export default router;
