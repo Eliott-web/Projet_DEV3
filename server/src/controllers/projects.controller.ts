@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import User from '../models/project.user';
 import { validatePassword, hashPassword, comparePassword } from '../utils/Password'; 
+import { isValidEmail } from '../utils/emailValidator';
 
 export const registerUser = async (req: Request, res: Response) => {
     try {

@@ -3,7 +3,7 @@ import express from 'express';
 import User from './models/project.user'; // Vérifie bien que le nom du fichier est correct
 import sequelize from './config/database';
 import userRoutes from './routes/user.routes'; // 1. Importation
-import authRoutes from './routes/auth.routes';
+
 
 const app = express();
 app.use(express.json());

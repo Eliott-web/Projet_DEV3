@@ -16,7 +16,6 @@ router.get('/', async (req, res) => {
 });
 
 router.post('/register', registerUser);
-
-
 router.post('/login', loginUser);
+
 export default router;
