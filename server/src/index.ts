@@ -13,7 +13,6 @@ const port = 3000;
 // ... après app.use(express.json())
 app.use('/api/users', userRoutes); // 2. Utilisation
 
-app.use('/api/auth', authRoutes);
 
 // Ta route pour la bannière
 app.get('/api/data', (req, res) => {

@@ -14,7 +14,9 @@ export const registerUser = async (req: Request, res: Response) => {
                 message: "Le mot de passe ne respecte pas les règles de sécurité pour ton groupe d'âge."
             });
         }
-
+        if (!isValidEmail(email)) {
+            return res.status(400).json({ message: "L'email n'est pas valide." });
+        }
         const hashedPassword = await hashPassword(password);
 
 
@@ -39,27 +41,29 @@ export const registerUser = async (req: Request, res: Response) => {
 
 export const loginUser = async (req: Request, res: Response) => {
     try {
-        // 1. On récupère le firstName au lieu de l'email
-        const { firstName, password } = req.body;
+        const { email, password } = req.body;
 
-        const user = await User.findOne({ where: { firstName: firstName } });
 
-        if (!user) {
-            // On garde un message générique pour la sécurité
-            return res.status(401).json({ message: "Prénom ou mot de passe incorrect." });
+        if (!isValidEmail(email)) {
+            return res.status(400).json({ message: "Format d'email invalide." });
         }
 
-        // 3. Vérifier le mot de passe (ça ne change pas)
+        const user = await User.findOne({ where: { email: email } }); 
+
+        if (!user) {
+            return res.status(401).json({ message: "Email ou mot de passe incorrect." });
+        }
+
         const isMatch = await comparePassword(password, user.password);
 
         if (!isMatch) {
-            return res.status(401).json({ message: "Prénom ou mot de passe incorrect." });
+            return res.status(401).json({ message: "Email ou mot de passe incorrect." });
         }
 
-        // 4. Succès
+
         res.status(200).json({
             message: `Bienvenue ${user.firstName} !`,
-            user: { id: user.id, firstName: user.firstName }
+            user: { id: user.id, email: user.email }
         });
 
     } catch (error) {
