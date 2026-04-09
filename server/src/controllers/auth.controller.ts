@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import User from '../models/project.user';
+// import User from '../models/project.user';
 
 // validation email
 import { isValidEmail } from '../utils/emailValidator';
